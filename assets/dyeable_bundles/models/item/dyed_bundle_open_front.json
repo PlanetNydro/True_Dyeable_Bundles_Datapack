@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/template_bundle_open_front",
+  "textures": {
+    "layer0": "dyeable_bundles:item/dyed_bundle_open_front",
+    "layer1": "dyeable_bundles:item/dyed_bundle_open_strings"
+  }
+}

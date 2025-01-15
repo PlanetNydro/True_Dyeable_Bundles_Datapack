@@ -1,0 +1,124 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "property": "minecraft:has_component",
+    "component": "minecraft:dyed_color",
+    "ignore_default": true,
+    "on_true": {
+      "type": "minecraft:select",
+      "cases": [
+        {
+          "model": {
+            "type": "minecraft:condition",
+            "on_false": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "dyeable_bundles:item/dyed_bundle",
+                  "tints": [
+                    {
+                      "type": "minecraft:dye",
+                      "default": 13466438
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "dyeable_bundles:item/dyed_bundle_strings"
+                }
+              ]
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "dyeable_bundles:item/dyed_bundle_open_back",
+                  "tints": [
+                    {
+                      "type": "minecraft:dye",
+                      "default": 11300418
+                    }
+                  ]
+                },
+                {
+                  "type": "minecraft:bundle/selected_item"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "dyeable_bundles:item/dyed_bundle_open_front",
+                  "tints": [
+                    {
+                      "type": "minecraft:dye",
+                      "default": 11300418
+                    }
+                  ]
+                }
+              ]
+            },
+            "property": "minecraft:bundle/has_selected_item"
+          },
+          "when": "gui"
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:composite",
+        "models": [
+          {
+            "type": "minecraft:model",
+            "model": "dyeable_bundles:item/dyed_bundle",
+            "tints": [
+              {
+                "type": "minecraft:dye",
+                "default": 13466438
+              }
+            ]
+          },
+          {
+            "type": "minecraft:model",
+            "model": "dyeable_bundles:item/dyed_bundle_strings"
+          }
+        ]
+      },
+      "property": "minecraft:display_context"
+    },
+    "on_false": {
+      "type": "minecraft:select",
+      "cases": [
+        {
+          "model": {
+            "type": "minecraft:condition",
+            "on_false": {
+              "type": "minecraft:model",
+              "model": "minecraft:item/bundle"
+            },
+            "on_true": {
+              "type": "minecraft:composite",
+              "models": [
+                {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/bundle_open_back"
+                },
+                {
+                  "type": "minecraft:bundle/selected_item"
+                },
+                {
+                  "type": "minecraft:model",
+                  "model": "minecraft:item/bundle_open_front"
+                }
+              ]
+            },
+            "property": "minecraft:bundle/has_selected_item"
+          },
+          "when": "gui"
+        }
+      ],
+      "fallback": {
+        "type": "minecraft:model",
+        "model": "minecraft:item/bundle"
+      },
+      "property": "minecraft:display_context"
+    }
+  }
+}
