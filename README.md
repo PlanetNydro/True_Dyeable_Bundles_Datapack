@@ -6,3 +6,7 @@ As a side affect of the leather dying system, the normal colored bundle recipes 
 
 Currently works with version 1.21.11
 
+
+[Planet Minecraft Page](https://www.planetminecraft.com/data-pack/true-dyeable-bundles/)
+
+[Modrinth Page](https://modrinth.com/datapack/nydro-true-dyeable-bundles)
