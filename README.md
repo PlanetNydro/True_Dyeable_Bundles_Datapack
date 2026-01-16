@@ -1,4 +1,4 @@
-# True Dyeable Bundles Data Pack
+# True Dyeable Bundles Datapack
 
 This simple datapack allows you to dye bundles in the same way you would dye leather armor. 
 
