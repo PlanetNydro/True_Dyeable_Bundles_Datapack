@@ -6,6 +6,7 @@ As a side affect of the leather dying system, the normal colored bundle recipes 
 
 Currently works with version 26.1
 
+<img width="474" height="330" alt="base vs dyed bundles" src="https://github.com/user-attachments/assets/9d337205-e2d0-46dd-9150-07732d378251" />
 
 [Planet Minecraft Page](https://www.planetminecraft.com/data-pack/true-dyeable-bundles/)
 
